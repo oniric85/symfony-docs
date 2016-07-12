@@ -52,7 +52,7 @@ be used to move the ``attachment`` file to a permanent location::
         if ($form->isValid()) {
             $someNewFilename = ...
 
-            $form['attachment']->getData()->move($dir, $someNewFilename);
+            $form['attachment']->move($dir, $someNewFilename);
 
             // ...
         }
